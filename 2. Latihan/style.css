@@ -1,0 +1,79 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #888;
+}
+
+/* Latihan 1 */
+.container {
+    display: flex;
+    background-color: #ddd;
+    max-width: 800px;
+    margin: 50px auto;
+    box-sizing: border-box;
+    gap: 5px;
+}
+
+.container.artikel{
+    padding: 10px;
+}
+
+.container.artikel .main-artikel {
+    flex: 3;
+    order: 2;
+}
+
+.container.artikel .sidebar-1 {
+    flex: 1;
+    order: 1;
+}
+
+.container.artikel .sidebar-2 {
+    flex: 1;
+    order: 3;
+}
+
+
+/* Latihan 2 */
+.container.services {
+    padding: 10px;
+}
+.container .layanan {
+    background-color: rgb(124, 124, 255);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+/* Latihan 3 */
+.container.kotak {
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+.container .thumbnail {
+    width: 15%;
+}
+.container .thumbnail .kotak-gallery{
+    width: 100px;
+    height: 100px;
+    background-color:salmon;
+}
+
+/* Latihan 4 */
+.container.center{
+    height: 500px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .box {
+    width: 150px;
+    height: 150px;
+    background-color: saddlebrown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,51 @@
+*Flex Box (Flexible Box) merupakan layout 1 dimensi yang dapat mengatur jarak dan penjajaran antar item dalam sebuah container. 
+
+* Apa maksud dari 1 Dimensi? Item didalamnya hanya bisa diatur 1 dimensi pada saat tertentu. Yaitu hanya bisa diatur secara baris (horizontal) atau kolom (vertikal), tidak bisa keduanya sekaligus.
+
+* Flexbox Layout Module merupakan cara yang efektif untuk menyusun, mensejajarkan dan mendistribusikan antar item di dalam sebuah container, meskipun ukurannya dinamin atau bahkan kita tidak tahu.
+
+* Istilah Flexbox
+    1. container/parent : yaitu wadah atau pembungkus item - item
+    2. Items (child) : yaitu sebuah item yang didalamnya terdapat container
+    3. Main axis : yaitu sumbu utama dari sebuah container yang menentukan urutan dari penempatan items secara horizontal
+    4. cross axis : yaitu sebuah garis / layout secara vertikal
+    5. main size : yaitu sebuah size secara horizontal (width)
+    6. cross size : yaitu sebuah size secara vertikal (height)
+    7. main start : yaitu titik awal sebuah item secara horizontal
+    8. main end : yaitu titik akhir sebuah item secara horizontal
+    9. cross start : yaitu titik awal sebuah item secara vertikal 
+    10. cross end : yaitu titik akhir sebuah item secara vertikal
+
+* Cara mengatur Flexbox, yaitu membuat sebuah element parent menjadi flex box, dan membuat element-element di dalamnya bisa berperilaku flex juga. 
+menggunakan property yang namanya display: flex;
+
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+
+Property-property yang ada pada container / parentnya : 
+    * flex-direction, berguna agar mau dari arah mana item - itemnya        dimulai. berikut adalah propertynya : 
+        flex-direction: row | row-reverse | column | column-reverse
+
+    * flex-wrap, berguna ketika itemnya sudah tidak muat item selanjutnya diletakkan dibawah dari item itu. berikut adalah propertynya : 
+        flex-wrap: nowrap | wrap | wrap-reverse
+    
+    * justify-content, berguna untuk mengatur letak item - item di dalamnya secara horizontal. Berikut adalah propertynya : 
+        justify-content : flex-start | flex-end | center | space-between | space-arround | space-evenly
+    
+    * align-items, berguna untuk mengatur tata letak item - item di dalamnya secara vertikal. Berikut adalah propertynya : 
+        align-items : flex-start | flex-end | center | stretch | baseline
+    
+    * align-content, sama seperti justify-content yang membedakan adalah property ini dapat berfungsi apabila itemnya lebih dari satu baris selain itu tata letaknya diatur secara vertikal. berikut adalah propertynya : 
+        align-content : flex-start | flex-end | center | stretch | space-arround | space-between
+
+
+Property-property yang ada pada items / childnya : 
+    * order, untuk mengatur urutan item. secara default urutan masing-masing item adalah 0. Berikut adalah propertymya : 
+        order : 1 | 2 | 3 | ...
+
+    * flex-grow, berguna untuk mengubah ukurannya menjadi lebih besar daripada item yang lain dan untuk jarak antar item tersebut menyesuaikan. Berikut adalah propertynya : 
+        flex-grow: 1 | 2 | 3 | ... 
+
+    *align-self, berguna untuk mengatur tata letak item secara vertikal. berikut adalah propertynya : 
+        align-self : auto | flex-start | flex-end | center | baseline | stretch

@@ -1,0 +1,57 @@
+.container {
+    width: 500px;
+    height: 500px;
+    border: 5px solid #555;
+    margin: 30px auto;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    gap: 4px;
+
+    /* property dibawah ini untuk mengatur arah dari sebuah item */
+    /* flex-direction: column-reverse; */
+
+    /* property dibawah ini untuk mengatur apabila sebuah item melebihi kapasistas */
+    /* flex-wrap: wrap; */
+
+    /* Propertyt dibawha ini untuk mengatur tata letak item secara horizontal */
+    /* justify-content: space-evenly; */
+
+    /* Property dibawah ini untuk mengatur tata leteak item secara vertical */
+    /* align-items: flex-start; */
+
+    /* Property dibawha ini untuk mengatur jarak items terhadap cross axis. property ini dapat berfungsi jika itemnya lebih dari satu baris */
+    /* align-content:stretch; */
+}
+
+.container div {
+    background-color: #cfcf29;
+    width: 100px;
+    /* height: 100px; */
+}
+
+.satu {
+    /* property dibawah ini berguna untuk mengatur urutan item */
+    /* order: 4; */
+
+    /* properyt dibawah ini berguna untuk mengubah ukuran item */
+    /* flex-grow: 2; */
+
+    /* Property dibawha ini untuk mengatur tata letak item (1 item saja) */
+    align-self: stretch;
+}
+
+div.dua {
+    align-self: flex-start;
+    /* order: 2; */
+}
+
+.container .tiga {
+    align-self: flex-end;
+    /* order: 1; */
+}
+
+div.empat {
+    align-self: center;
+    /* order: 3 */
+}
